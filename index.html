@@ -3,60 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>SE1400 Assignmnet Files</title>
+    <title>Classic Games Collection</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
-        header { background: #026c99; color: white; padding: 10px 0; text-align: center; }
-        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-        h1, h2 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        ul li { margin: 5px 0; }
-        ul li a { color: #026c99; text-decoration: none; font-weight: bold; }
-        ul li a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .game-box {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .game-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-box h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .game-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .game-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .class-games-link {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .class-games-link:hover {
+            background: #1a252f;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SE-1400 Course Homepage</h1>
-        <p>This is where I will post links to my assignments and other important information.</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! My name is [Your Name], and I’m excited to share this simple website with you. I enjoy learning about web development and creating user-friendly designs. In my free time, I love exploring new hobbies, reading, and spending time outdoors.</p>
-        <p>This website is a small step toward showcasing my skills and experiments with coding. Stay tuned for more updates and improvements!</p>
-    </section>
-    <section>
-        <h2>Course Assignments</h2>
-        <ul>
-            <li><a href="#">Utah Tech 1</a></li>
-            <li><a href="#">Utah Tech 2</a></li>
-            <li><a href="#">Utah Tech 3</a></li>
-            <li><a href="#">Utah Tech 4</a></li>
-            <li><a href="#">Utah Tech 5</a></li>
-            <li><a href="#">Utah Tech 6</a></li>
-            <li><a href="#">Utah Tech 7</a></li>
-            <li><a href="#">Utah Tech 8</a></li>
-            <li><a href="#">Utah Tech 9</a></li>
-            <li><a href="#">Utah Tech 10</a></li>
-        </ul>
-        <h2>Final Project Milestones</h2>
-        <ul>
-            <li><a href="#">Milestone 1</a></li>
-            <li><a href="#">Milestone 2</a></li>
-            <li><a href="#">Milestone 3</a></li>
-            <li><a href="#">Milestone 4</a></li>
-            <li><a href="#">Milestone 5</a></li>
-            <li><a href="#">Milestone 6</a></li>
-            <li><a href="#">Milestone 7</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; <span id="currentYear"></span> All rights reserved.</p>
-    </footer>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+    <div class="container">
+        <h1>Classic Games Collection</h1>
+        <a href="main.html" class="class-games-link">View Class Games →</a>
+        <div class="game-grid">
+            <a href="index.html" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/403430/header.jpg?t=1580375648" alt="GALAGA">
+                <h2>GALAGA</h2>
+                <p>Classic arcade space shooter</p>
+            </a>
+            <!-- Add more classic games here -->
+        </div>
+    </div>
 </body>
-</html>
+</html> 
