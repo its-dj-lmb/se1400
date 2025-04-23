@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Games Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin: 3rem 0 1.5rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: #2c3e50;
+            margin: 0.5rem auto;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .game-box {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .game-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-box h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .game-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .game-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Classic Games</a>
+        <h1>Class Games Collection</h1>
+        <div class="game-grid">
+            <!-- Class game boxes -->
+            <a href="https://charles22224.github.io/games/vibe26/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/Charles.png" alt="Charles's Game">
+                <h2>Charles's Game</h2>
+                <p>Click to play Charles's game</p>
+            </a>
+            <a href="https://sigma22333.github.io/game-dev/vibe25/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/sigma.png" alt="Sigma's Game">
+                <h2>Sigma's Game</h2>
+                <p>Click to play Sigma's game</p>
+            </a>
+            <a href="https://noah-goodman229.github.io/you-thought-this-was-a-repo-but-it-was-i-Dio/vibe26/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/Noahthumbnai.png" alt="Noah's Game">
+                <h2>Noah's Game</h2>
+                <p>Click to play Noah's game</p>
+            </a>
+            <a href="https://27jaracfer.github.io/intro-js/vibe25" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/Jara.png" alt="Jara's Game">
+                <h2>Jara's Game</h2>
+                <p>Click to play Jara's game</p>
+            </a>
+            <a href="https://ccchaxxx.github.io/intro-js/projects/vibe25/game.html" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/Chax.png" alt="Chax's Game">
+                <h2>Chax's Game</h2>
+                <p>Click to play Chax's game</p>
+            </a>
+            <a href="https://elmascapito13.github.io/intro-js/vibe25/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/Elma.png" alt="Elmas's Game">
+                <h2>Elmas's Game</h2>
+                <p>Click to play Elmas's game</p>
+            </a>
+            <a href="https://26nyberjefc.github.io/intro-js/vibe2/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://via.placeholder.com/300x200/FF3333/FFFFFF?text=Game+7" alt="Game 7">
+                <h2>Nyber's Game</h2>
+                <p>Click to play Nyber's game</p>
+            </a>
+            <a href="https://elvergalarga14242.github.io/intro-js/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://via.placeholder.com/300x200/33FF33/FFFFFF?text=Game+8" alt="Game 8">
+                <h2>Elver's Game</h2>
+                <p>Click to play Elver's game</p>
+            </a>
+            <a href="https://treymid.github.io/game-dev/vibe25/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://via.placeholder.com/300x200/3333FF/FFFFFF?text=Game+9" alt="Game 9">
+                <h2>Trey's Game</h2>
+                <p>Click to play Trey's game</p>
+            </a>
+            <a href="https://mrgard1.github.io/gamedev-intro-js/vibe25/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Mr.+Gard's+Game" alt="Mr. Gard's Game">
+                <h2>Mr. Gard's Game</h2>
+                <p>Click to play Mr. Gard's game</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 

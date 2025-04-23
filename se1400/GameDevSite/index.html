@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Games Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .game-box {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .game-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-box h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .game-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .game-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .class-games-link {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .class-games-link:hover {
+            background: #1a252f;
+        }
+
+        .original-game-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: #2c3e50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .original-game-button:hover {
+            background: #1a252f;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classic Games Collection</h1>
+        <a href="main.html" class="class-games-link">View Class Games →</a>
+        <div class="game-grid">
+            <a href="https://www.free80sarcade.com/nes_galaga.php" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/403430/header.jpg?t=1580375648" alt="GALAGA">
+                <h2>GALAGA</h2>
+                <p>Defend Earth from alien invaders in this iconic arcade shooter. Dodge enemy fire, rescue captured ships, and rack up high scores in this timeless space battle.</p>
+            </a>
+            <a href="https://www.free80sarcade.com/nes_1942.php" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/1942 but better.png" alt="1942" style="width: 100%; height: 200px; object-fit: cover;">
+                <h2>1942</h2>
+                <p>Take control of a WWII fighter plane in this vertical scrolling shooter. Battle through waves of enemy aircraft, perform loop maneuvers, and power up your weapons.</p>
+            </a>
+            <a href="https://archive.org/details/msdos_Oregon_Trail_The_1990" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/theoregontrail.png" alt="Oregon Trail" style="width: 100%; height: 200px; object-fit: cover;">
+                <h2>Oregon Trail</h2>
+                <p>Lead a wagon party on the perilous journey west. Manage supplies, hunt for food, and make critical decisions in this educational pioneer adventure.</p>
+            </a>
+            <a href="https://archive.org/details/msdos_SimAnt_-_The_Electronic_Ant_Colony_1991" class="game-box" style="text-decoration: none; display: block;">
+                <img src="images/simant.png" alt="SimAnt" style="width: 100%; height: 200px; object-fit: cover;">
+                <h2>SimAnt</h2>
+                <p>Take control of an ant colony in this unique simulation game. Build your colony, battle rival ants, and conquer the yard while learning about ant behavior and ecology.</p>
+            </a>
+            <a href="https://sandtris.com/" class="game-box" style="text-decoration: none; display: block;">
+                <img src="https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Sandtris" alt="Sandtris">
+                <h2>Sandtris</h2>
+                <p>A creative twist on the classic Tetris formula. Match colors and clear lines in this modern take on the beloved puzzle game, featuring unique mechanics and vibrant visuals.</p>
+                <a href="https://tetris.com/play-tetris" class="original-game-button">Play the Original!</a>
+            </a>
+            <!-- Add more classic games here -->
+        </div>
+    </div>
+</body>
+</html> 
